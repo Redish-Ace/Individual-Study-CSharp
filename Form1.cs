@@ -23,8 +23,7 @@ namespace StudiuIndividual
             string login = txtLogin.Text;
             string password = txtPass.Text;
             //Creaza stringul de conexiune folosind datele din variabile login si password
-            //connection = "Data Source=DESKTOP-I0IP3RD\\SQLEXPRESS;Initial Catalog=KatanaSushi;User ID=" + login + ";Password=" + password;
-            connection = "Data Source=WIN-1IC33OSG4CH\\SQLEXPRESS;Initial Catalog=KatanaSushi;Persist Security Info=True;User ID=" + login + ";Password=" + password;
+            connection = "Data Source=Server_Name;Initial Catalog=DataBase;Persist Security Info=True;User ID=" + login + ";Password=" + password;
             using (SqlConnection con = new SqlConnection(connection))
             {
                 try
